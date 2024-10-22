@@ -1,4 +1,6 @@
-package java.pd.TradingEngineServerConfig;
+package ted.TradingEngineServerConfig;
+
+import ted.IOptions;
 
 public class TradingServerConfig {
     class TradigEngineServerSettings{
@@ -6,7 +8,6 @@ public class TradingServerConfig {
         public int getPort() {
             return port;
         }
-
         public void setPort(int port) {
             this.port = port;
         }

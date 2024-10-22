@@ -1,6 +1,4 @@
-package java.pd;
-
-import java.pd.TradingEngineServerConfig.TradingServerConfig;
+package ted;
 
 public interface IOptions<T> {
     public T value();
