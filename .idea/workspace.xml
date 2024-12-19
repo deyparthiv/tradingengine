@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c17d5d-cd48-41c4-93e7-686be624843c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Instrument/src/main/java/security/IFuture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instrument/src/main/java/security/ISecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Instrument/src/main/java/security/ISecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instrument/src/main/java/security/IShare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instrument/src/main/java/security/SecurityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Instrument/src/main/java/security/SecurityFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/MessageProcessors/MessageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/MessageProcessors/MessageVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/Messages/IMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/Messages/IOrderMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/Messages/MessageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/Messages/OrderMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/TradingEngineServerCore/ConnectionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/TradingEngineServerCore/TradingServerHost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngineServer/src/main/java/TradingEngineServerCore/TradingEngineServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServer/src/main/java/TradingEngineServerCore/TradingEngineServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/server/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +26,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -42,7 +55,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "server-building",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Projects in Uni/TradingEngineToGit",
     "node.js.detected.package.eslint": "true",
@@ -88,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734623194492</updated>
-      <workItem from="1734623196714" duration="1938000" />
+      <workItem from="1734623196714" duration="9328000" />
     </task>
     <servers />
   </component>

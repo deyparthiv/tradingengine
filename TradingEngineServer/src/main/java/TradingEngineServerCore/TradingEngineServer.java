@@ -1,37 +1,32 @@
 package TradingEngineServerCore;
 
-
-import TradingEngineServerConfiguration.TradingEngineServerConfiguration;
-import Logger.Logger;
+import MessageProcessors.MessageProcessor;
+import Messages.IMessage;
+import TradingEngineServerConfiguration.ITradingServerConfiguration;
+import Logger.ILogger;
 public class TradingEngineServer implements ITradingEngineServer {
-    private final Logger logger;
-    private final TradingEngineServerConfiguration config;
+    private final ILogger logger;
+    private final ITradingServerConfiguration config;
 
+    private final MessageProcessor messageProcessor;
     private TradingEngineServer(TradingEngineServerBuilder builder){
         this.logger = builder.logger;
         this.config = builder.config;
+        messageProcessor = new MessageProcessor(this);
     }
-
-    /**
-     * When an object implementing interface {@code Runnable} is used
-     * to create a thread, starting the thread causes the object's
-     * {@code run} method to be called in that separately executing
-     * thread.
-     * <p>
-     * The general contract of the method {@code run} is that it may
-     * take any action whatsoever.
-     *
-     * @see Thread#run()
-     */
     @Override
     public void run() {
 
     }
 
+    public void processMessage(IMessage message){
+        message.accept(messageProcessor);
+    }
+
     public static class TradingEngineServerBuilder{
-        private Logger logger;
-        TradingEngineServerConfiguration config;
-        public TradingEngineServerBuilder(Logger logger, TradingEngineServerConfiguration config){
+        private ILogger logger;
+        ITradingServerConfiguration config;
+        public TradingEngineServerBuilder(ILogger logger, ITradingServerConfiguration config){
             this.config = config;
             this.logger = logger;
         }

@@ -1,4 +1,4 @@
-package java.org.example;
+package main.java.org.server;
 
 public class Main {
     public static void main(String[] args) {
