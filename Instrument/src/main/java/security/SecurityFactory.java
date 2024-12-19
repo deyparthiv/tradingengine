@@ -1,4 +1,5 @@
 package security;
 
-public class SecurityFactory {
+public final class SecurityFactory {
+
 }
